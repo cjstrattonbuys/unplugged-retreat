@@ -127,13 +127,13 @@ textarea {
     line-height: 1.285em;
   }
  
-  /*img {
- 
+  img {
+    width: 100%;
   }
  
   figure {
- 
-  }*/
+    margin: 0;
+  }
  
   address {
     font-style: normal;
@@ -161,12 +161,20 @@ textarea {
 
    /* header */
    header .content-wrapper {
+     margin: 0;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-     margin: 0;
    }
+
+   header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
    .header-divider {
      background: #3a3a3a;
@@ -238,6 +246,9 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url('../img/hero-img.jpg') center no-repeat #333;
+     background-size: cover;
+     min-height: 500px;
    }
 
    .hero-area h1 {
@@ -287,6 +298,8 @@ textarea {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+     background: url('../img/background.jpg') center no-repeat #333;
+     background-size: cover;
    }
 
    .features h2 {
@@ -315,6 +328,14 @@ textarea {
      background: #2a423a;
      display: flex;
      justify-content: center;
+     flex-flow: row wrap;
+   }
+
+   .reviews figure {
+     width: 100%;
+     display: flex;
+     justif-content: center;
+     align-items: center;
      flex-flow: row wrap;
    }
 
@@ -517,6 +538,10 @@ textarea {
   }
 
   /* hero area */
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -558,6 +583,11 @@ textarea {
   .reviews article {
     display: flex;
     justify-content: space-between;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
   }
 
   .reviews h2 {
@@ -678,7 +708,7 @@ textarea {
   /* hero area */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* aside */
