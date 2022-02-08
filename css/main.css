@@ -326,15 +326,15 @@ textarea {
      flex-flow: row wrap;
    }
 
-   .features i {
-     font-size: 3.75em;
-     margin-bottom: 40px;
-   }
-
    .features p {
      margin: 0;
      text-align: center;
    }
+
+   .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
 
    /* reviews */
    .reviews {
@@ -555,7 +555,7 @@ textarea {
   }
 
   header nav {
-    width: 20%;
+    width: 30%;
   }
 
   header nav ul {
@@ -656,6 +656,11 @@ textarea {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
